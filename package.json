@@ -30,7 +30,7 @@
     "not ie <= 8"
   ],
   "dependencies": {
-    "xml-loader": "1.2.1"
+    "xml-loader": "^1.2.1"
   },
   "devDependencies": {
     "vue": "^2.5.11",
