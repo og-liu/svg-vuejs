@@ -29,7 +29,7 @@ export default {
         }
       },
       render: function (createElement) {
-        const xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../../../src/svg/${this.path}${this.name}.svg`)
+        const xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../../src/svg/${this.path}${this.name}.svg`)
 
         const createChildren = (data = xml.svg.$$) => {
           let children = []
