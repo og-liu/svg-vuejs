@@ -1,13 +1,18 @@
 <!-- Vue Single File Component, Created by liukun on 2021/1/19. -->
 <template>
   <div id="app">
-    首页
+    <github-corner></github-corner>
   </div>
 </template>
 
 <script>
+import githubCorner from './components/githubCorner'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    githubCorner
+  }
 }
 </script>
 
