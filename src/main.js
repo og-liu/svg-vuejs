@@ -4,6 +4,7 @@
 
 import Vue from 'vue'
 import App from './app'
+import './assets/style.css'
 
 new Vue({
   el: '#app',
