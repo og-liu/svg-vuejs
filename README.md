@@ -1,3 +1,7 @@
+## Liscense
+
+MIT License
+
 <p align="center">
     <img width="100" src="https://s3.ax1x.com/2020/11/18/DmAfEt.gif" alt="ogliu logo">
 </p>
@@ -16,8 +20,7 @@
   </p>
 </div>
 
-[📙 中文文档](http://svg.ogliu.com)
 
-## Liscense
-
-MIT License
+<p align="center">
+  [📙 中文文档](http://svg.ogliu.com)
+</p>
