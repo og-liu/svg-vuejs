@@ -24,4 +24,4 @@ npm install svg-vuejs
 
 ## Liscense
 
-MIT License
+MIT
