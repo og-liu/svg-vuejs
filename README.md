@@ -13,8 +13,6 @@ Made with ❤️ by <a href="https://github.com/og-liu">og-liu</a>
 ## Links
 📙 [中文文档](http://svg.ogliu.com)
 
-<img width="100" src="https://s3.ax1x.com/2020/11/18/DmAfEt.gif" alt="ogliu logo">
-
 ## Installation
 
 ```bash
