@@ -1,3 +1,11 @@
+SVG VUEJS
+---
+[![npm version](https://img.shields.io/npm/v/svg-vuejs)](https://www.npmjs.com/package/svg-vuejs)
+[![npm downloads](https://img.shields.io/npm/dt/svg-vuejs)](https://www.npmjs.com/package/svg-vuejs)
+[![github starts](https://img.shields.io/github/stars/og-liu/svg-vuejs)](https://github.com/og-liu/svg-vuejs/stargazers)
+[![license](https://img.shields.io/github/license/og-liu/svg-vuejs)](https://img.shields.io/github/license/og-liu/svg-vuejs)
+
+
 ## Liscense
 
 MIT License
@@ -10,13 +18,6 @@ MIT License
   —— Made with ❤️ by <a href="https://github.com/og-liu">og-liu</a></p>
   <p align="center">
     <img src="https://img.shields.io/github/license/og-liu/svg-vuejs" alt="License">
-    <a href="https://github.com/og-liu/svg-vuejs/stargazers">
-        <img src="https://img.shields.io/github/stars/og-liu/svg-vuejs" alt="Github starts">
-    </a>
-    <a href="https://www.npmjs.com/package/svg-vuejs">
-      <img src="https://img.shields.io/npm/dt/svg-vuejs" alt="Npm downloads">
-    </a>
-    <img src="https://img.shields.io/npm/v/svg-vuejs" alt="Npm version">
   </p>
 </div>
 
