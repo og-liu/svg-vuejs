@@ -1,5 +1,4 @@
 SVG VUEJS
-
 ---
 
 [![npm version](https://img.shields.io/npm/v/svg-vuejs)](https://www.npmjs.com/package/svg-vuejs)
@@ -14,7 +13,7 @@ Made with ❤️ by <a href="https://github.com/og-liu">og-liu</a>
 ## Links
 <img width="100" src="https://s3.ax1x.com/2020/11/18/DmAfEt.gif" alt="ogliu logo">
 
-- [📙 中文文档](http://svg.ogliu.com)
+- 📙 [中文文档](http://svg.ogliu.com)
 
 ## Installation
 
