@@ -1,6 +1,6 @@
 <!-- Vue Single File Component, Created by liukun on 2021/1/19. -->
 <template>
-  <vue-svg-item :name="name" :path="path" :width="width" :height="height"></vue-svg-item>
+  <vue-svg-item class="svg-icon" :name="name" :path="path" :width="width" :height="height"></vue-svg-item>
 </template>
 
 <script type="text/ecmascript-6">
@@ -60,3 +60,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.svg-icon {
+  fill: currentColor;
+}
+</style>
