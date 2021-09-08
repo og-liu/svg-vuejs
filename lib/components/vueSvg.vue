@@ -53,7 +53,7 @@ export default {
           }
         } else {
           try {
-            xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../source/iconfont/${this.name}.svg`)
+            xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../source/iconfont/${this.name}.svg`)
           } catch (e)  {
             try {
               xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../../src/svg/${this.name}.svg`)
