@@ -25,12 +25,12 @@ export default {
       default: false
     },
     width: {
-      type: Number,
-      default: 20
+      type: String,
+      default: '20'
     },
     height: {
-      type: Number,
-      default: 20
+      type: String,
+      default: '20'
     }
   },
   components: {
