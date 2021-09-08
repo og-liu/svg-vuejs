@@ -1,6 +1,6 @@
 {
   "name": "svg-vuejs",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "适用于 Vuejs 的轻量、多色动态 SVG 组件",
   "repository": {
     "type": "git",
