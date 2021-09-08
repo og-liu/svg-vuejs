@@ -43,6 +43,10 @@ export default {
         name: {
           type: String,
           required: true
+        },
+        multipleColor: {
+          type: Boolean,
+          default: false
         }
       },
       render: function (createElement) {
