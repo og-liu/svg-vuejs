@@ -13,6 +13,10 @@ export default {
       required: true
     },
     path: String,
+    multipleColor: {
+      type: Boolean,
+      default: false
+    },
     width: {
       type: Number,
       default: 20
@@ -65,11 +69,13 @@ export default {
 
         if (xml && xml.svg) {
 
-          xml.svg.$$.map(item => {
-            if (item['#name'] === 'path') {
-              item.$.fill = 'currentColor'
-            }
-          })
+          if (!this.multipleColor) {
+            xml.svg.$$.map(item => {
+              if (item['#name'] === 'path') {
+                item.$.fill = 'currentColor'
+              }
+            })
+          }
 
           const createChildren = (data = xml.svg.$$) => {
             let children = []
