@@ -64,6 +64,13 @@ export default {
         }
 
         if (xml && xml.svg) {
+
+          xml.svg.$$.map(item => {
+            if (item['#name'] === 'path') {
+              item.$.fill = 'currentColor'
+            }
+          })
+
           const createChildren = (data = xml.svg.$$) => {
             let children = []
             let child = []
