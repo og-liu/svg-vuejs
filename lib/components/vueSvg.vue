@@ -13,8 +13,14 @@ export default {
       required: true
     },
     path: String,
-    width: String,
-    height: String
+    width: {
+      type: Number,
+      default: 20
+    },
+    height: {
+      type: Number,
+      default: 20
+    }
   },
   components: {
     vueSvgItem: {
@@ -29,32 +35,60 @@ export default {
         }
       },
       render: function (createElement) {
-        const xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../../src/svg/${this.path}${this.name}.svg`)
+        let xml = null
+        const msg = `svg-vuejs: 未找到 ${this.path}${this.name}.svg`
 
-        const createChildren = (data = xml.svg.$$) => {
-          let children = []
-          let child = []
-          for (let i = 0; i < data.length; i++) {
-            const item = data[i]
-            child = []
-            for (let key in item) {
-              if (key === '$$') {
-                child.push(createChildren(item[key]))
-              }
+        if (this.path.length) {
+          try {
+            xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../../src/svg/${this.path}${this.name}.svg`)
+          } catch (e) {
+            const start = this.path.substr(0,1) === '/'
+            const end = this.path.substr(this.path.length - 1,1) !== '/'
+            const length = this.path.length === 1
+            if (start || end || length) {
+              console.error(`svg-vuejs: path ${this.path} 参数错误`)
+            } else {
+              console.error(msg)
             }
-            children[i] = createElement(item['#name'], {
-              attrs: item.$ || '',
-              domProps: {
-                innerHTML: item._ || void(0)
-              }
-            }, [
-              ...child
-            ])
           }
-          return children
+        } else {
+          try {
+            xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../source/iconfont/${this.name}.svg`)
+          } catch (e)  {
+            try {
+              xml = require(`!xml-loader?explicitChildren=true&preserveChildrenOrder=true!../../../../src/svg/${this.name}.svg`)
+            } catch (e) {
+              console.error(msg)
+            }
+          }
         }
 
-        return createElement('svg', {attrs: xml.svg.$ || ''}, [...createChildren()])
+        if (xml && xml.svg) {
+          const createChildren = (data = xml.svg.$$) => {
+            let children = []
+            let child = []
+            for (let i = 0; i < data.length; i++) {
+              const item = data[i]
+              child = []
+              for (let key in item) {
+                if (key === '$$') {
+                  child.push(createChildren(item[key]))
+                }
+              }
+              children[i] = createElement(item['#name'], {
+                attrs: item.$ || '',
+                domProps: {
+                  innerHTML: item._ || void(0)
+                }
+              }, [
+                ...child
+              ])
+            }
+            return children
+          }
+
+          return createElement('svg', {attrs: xml.svg.$ || ''}, [...createChildren()])
+        }
       }
     }
   }

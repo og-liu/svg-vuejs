@@ -1,16 +1,8 @@
 <!-- Vue Single File Component, Created by liukun on 2021/1/19. -->
 <template>
   <div id="app">
-
-    <!-- 插画示例 -->
-    <div>
-      <vueSvg name="banner"></vueSvg>
-    </div>
-
     <!-- 图标示例 -->
-    <div>
-      <vueSvg style="color: rgb(112, 183, 253); width: 36px;" name="phone"></vueSvg>
-    </div>
+    <vueSvg name="phone"></vueSvg>
 
     <github-corner></github-corner>
   </div>
@@ -36,7 +28,6 @@ export default {
 }
 
 #app {
-  margin-top: -100px !important;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
