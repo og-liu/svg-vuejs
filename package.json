@@ -1,6 +1,6 @@
 {
   "name": "svg-vuejs",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "description": "适用于 Vuejs 的轻量、多色 SVG 组件",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/og-liu/svg-vuejs/issues"
   },
-  "homepage": "https://github.com/og-liu/svg-vuejs#readme",
+  "homepage": "https://svg.ogliu.com",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
