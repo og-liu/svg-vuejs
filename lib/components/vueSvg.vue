@@ -6,7 +6,8 @@
     :path="path"
     :multipleColor="multipleColor"
     :width="width"
-    :height="height">
+    :height="height"
+    :color="color">
   </vue-svg-item>
 </template>
 
@@ -31,6 +32,10 @@ export default {
     height: {
       type: String,
       default: '20'
+    },
+    color: {
+      type: String,
+      default: '#2c3e50'
     }
   },
   components: {
